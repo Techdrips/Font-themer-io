@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Profile Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Font Configuration Profile Generator</h1>
+        <form id="font-upload-form" enctype="multipart/form-data">
+            <label for="font-upload">Upload Font Zip File:</label>
+            <input type="file" id="font-upload" name="font" accept=".zip" required>
+            <button type="submit">Generate Configuration Profile</button>
+        </form>
+        <div id="result" style="display: none;">
+            <a id="download-link" href="" download="font-config.mobileconfig">Download Configuration Profile</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
